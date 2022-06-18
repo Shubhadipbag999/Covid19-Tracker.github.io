@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="covid19.css">
+    <title>covid19/tracker</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="icon.jpg" id="icon">
+            <span id="name">Covid-19 Tracker</span>
+            <span id="discription">LIVE NOW</span>
+            <div class="snav1">
+                <a href="https://www.facebook.com/shubhadip.bag/" target="_blank"><img src="fb.svg" class="ico"></a>
+                <a href="https://www.instagram.com/shubhadip_bag/" target="_blank"><img src="ins.svg" class="ico"></a>
+                <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank"><img src="mail.svg"
+                        class="ico"></a>
+            </div>
+        </div>
+        <div id="main_block">
+            <div id="dis">COVID-19 Dashboard(INDIA)</div>
+            <span id="word"></span>
+             
+            <div id="first_block">
+                <h1 id="world">All Over The World</h1>   
+                <div id="first">
+                <div class="f" id="total_case"><span>Total Cases</span>
+                <span></span></div>
+                <div class="f" id="total_death"><span>Total Death</span>
+                    <span></span></div>
+                <div class="f" id="new_case"><span>New Cases</span>
+                    <span></span></div>
+                <div class="f" id="new_death"><span>New Death</span>
+                    <span></span></div>
+                </div>
+            </div>
+            
+             
+            <div id="end_block">
+                <h1 id="india">Indias Covid 19 Record</h1>
+                <div id="second">
+                <div class="f" id="itotal_case"><span>Total Cases</span>
+                    <span></span></div>
+                <div class="f" id="itotal_death"><span>Total Death</span>
+                    <span></span></div>
+                <div class="f" id="inew_case"><span>New Cases</span>
+                    <span></span></div>
+                <div class="f" id="inew_death"><span>New Death</span>
+                    <span></span></div>
+                </div>
+            </div>
+            <div id="reload">
+                <button id="re" onclick="reload()">Reload Now</button> 
+            </div>
+             
+            
+        </div>
+    </div>
+    <script src="covid19.js"></script>
+</body>
+
+</html>

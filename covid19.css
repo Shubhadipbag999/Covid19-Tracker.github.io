@@ -1,0 +1,283 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+#container{
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+   
+}
+#header{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    width:100vw;
+    background-color: white;
+
+}
+#icon{
+    height: 11.5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  
+}
+#name{
+    font-size: 2.5vw;
+    font-family: 'Righteous', cursive;
+    width: 30vw;
+}
+.snav1{
+    display: flex;
+    align-items: flex-end;
+     justify-content:flex-end;
+    width: 45vw;
+}
+.ico{
+    margin-right: 4vw;
+    height: 3vh;
+}
+#main_block{
+    height: 85vh;
+    width: 100vw;
+}
+#first_block{
+    height: 32vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#end_block{
+    height: 32vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#reload{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+#word{
+    height: 6vh;
+    /* margin-bottom: 2vh; */
+    background-color: rgb(17, 180, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    font-size:2vw;
+}
+#first{
+    margin-top: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#second{
+    margin-top: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#re{
+    background-color: deeppink;
+    height: 5vh;
+    width: 30vw;
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: bold;
+}
+#re:hover{
+    background-color: rgb(255, 20, 71);  
+    color: deepskyblue;
+}
+#word:after{
+    content:"";
+    animation: changetext 15s infinite linear;
+    
+}
+@keyframes changetext {
+    0%{content: "STAY HOME IF YOU DON'T FEEL WELL";}
+    25%{content: "WASH YOUR HANDS OFTEN WITH SOAP AND WATER";}
+    50%{content: "CLEAN AND DISINFECT FREQUENTLY";}
+    75%{content: "WEAR A CLOTH FACE COVERING";}
+    100%{content: "COVER YOUR COUGHS AND SNEEZES";}
+
+}
+.f{
+    height: 20vh;
+    width: 20vw;
+    background-color: yellow;
+    margin-right: 2vw;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    font-size: 2vw;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+.f:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    box-shadow: 0 10px 12px 0 rgba(255, 255, 255, 0.6),0 10px 12px 11px rgba(157, 162, 167, 0.45);
+}
+#world{
+    color: cornsilk;
+    /* flex-direction: row; */
+    font-size: 2.1vw;
+}
+#india{
+    color: cornsilk; 
+    font-size: 2.1vw;
+}
+#discription{
+    width: 15vw;
+    text-align: center;
+    color: crimson;
+    font-size: 1.6vw;
+    font-weight: bold;
+    font-family: 'Secular One', sans-serif;
+    animation: slider 3.8s infinite;
+}
+#dis{
+    color: white;
+    font-size: 2vw;
+    height: 6vh;
+    width: 100vw;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+@keyframes slider{
+    0%{
+        font-size: 1.6vw;
+    }
+    25%{
+        
+        font-size: 2.6vw;
+    }
+    50%
+    {
+        font-size: 1.6vw;
+    }
+    75%
+    {
+        font-size: 2.6vw;
+    }
+    100%
+    {
+        font-size: 1.6vw;
+    }
+}
+@media only screen and (max-width: 850px) {
+    body {
+      background-color: lightblue;
+    }
+    #name{
+        font-size: 4vw;
+        width: 20vw;
+    }
+    #dis{
+        display: none;
+        font-size: 3.9vw;
+        
+    }
+    #word{
+        font-size: 3vw;
+        height: 3.5vh;
+        
+    }
+    #discription{
+        width: 40vw;
+    }
+    .snav1{
+        width: 25vw;
+        height: 5vh;
+        
+    }
+    #first_block{
+        /* margin-top: 3vh; */
+        height: 25vh;
+        width: 100vw;
+        margin-bottom: 3vh;
+        display: flex;
+        background-color: rgb(255, 0, 55);
+        align-items: center;
+        justify-content: center;
+    }
+    #first{
+        display: flex;
+        flex-direction: column;
+    }
+    #second{
+        display: flex;
+        flex-direction: column
+    }
+    #end_block{
+        height: 25vh;
+        width: 100vw;
+        /* margin-bottom: 3vh; */
+        background-color: violet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main_block{
+        /* height: 88vh; */
+        width: 100vw;
+    }
+    #first_block{
+        flex-direction: column;
+        margin-bottom: 0vh;
+        height: 36.5vh;
+    }
+    #end_block{
+        flex-direction: column;
+        margin-bottom: 0vh;
+        height: 36.5vh;
+    }
+    .f{
+        height: 5vh;
+    width: 80vw;
+    margin-bottom: 1vh;
+    background-color: chartreuse;
+    
+    }
+}
+/* @media only screen and (max-width: 450px) {
+    #name{
+        font-size: 3.1vw;
+        width: 18vw;
+    }
+    .ico{
+        margin-left: 2vw;
+        height: 2vh;
+    }
+    #discription{
+        font-size: 2vw;
+    }
+    .f{
+        height: 25vh;
+    width: 75vw;
+    margin-bottom: 1vh;
+    background-color: rgb(255, 157, 0);
+    }
+  } */
